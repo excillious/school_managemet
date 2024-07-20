@@ -1,0 +1,49 @@
+.schools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the list */
+  }
+  
+  .school-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    width: 300px; /* Fixed width */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .school-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .school-card img {
+    width: 100%; /* Full width image */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover the image container */
+  }
+  
+  .school-card h2 {
+    font-size: 1.5rem; /* Larger font size for the school name */
+    color: #333; /* Dark text color */
+    margin: 10px 0; /* Margin around the name */
+  }
+  
+  .school-card p {
+    font-size: 1rem; /* Standard font size for details */
+    color: #555; /* Slightly lighter text color */
+    margin: 5px 0; /* Margin around the details */
+  }
+  
+  @media (max-width: 768px) {
+    .school-card {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 400px; /* Max width for better responsiveness */
+    }
+  }
+  
